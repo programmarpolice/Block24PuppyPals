@@ -1,5 +1,6 @@
 import { puppyList } from "./data.js";
 import { useState } from "react";
+import "./index.css";
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList);
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       {featPupId && (
-        <div>
+        <div className="header">
           <h2>{featuredPup.name}</h2>
           <ul>
             <li> Age: {featuredPup.age}</li>
